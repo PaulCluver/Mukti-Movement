@@ -1,0 +1,123 @@
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] pwd
+
+Path                                                                                                                   
+----                                                                                                                   
+F:\Development\Personal\PluralSight\Angular JS Fundamentals                                                            
+
+
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] dir
+
+
+    Directory: F:\Development\Personal\PluralSight\Angular JS Fundamentals
+
+
+Mode                LastWriteTime     Length Name                                                                      
+----                -------------     ------ ----                                                                      
+d----        2014/03/27  01:36 PM            angular-seed-master                                                       
+-a---        2014/03/27  10:18 AM     103155 angular.min.js                                                            
+-a---        2014/03/27  10:37 AM        367 index.html                                                                
+-a---        2014/04/10  03:45 PM          1 terminal.glue                                                             
+
+
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] pwd
+
+Path                                                                                                                   
+----                                                                                                                   
+F:\Development\Personal\PluralSight\Angular JS Fundamentals                                                            
+
+
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] cd ..\..\
+Glue encountered an error.  Please report this as a new issue on the GitHub repository.  Here is the stack trace:
+
+Traceback (most recent call last):
+  File "Glue in C:\Users\PaulCL\AppData\Roaming\Sublime Text 3\Installed Packages\Glue.sublime-package", line 165, in muterun_runner
+  File "Glue in C:\Users\PaulCL\AppData\Roaming\Sublime Text 3\Installed Packages\Glue.sublime-package", line 175, in muterun
+  File "X/shlex.py", line 276, in split
+  File "X/shlex.py", line 266, in __next__
+  File "X/shlex.py", line 93, in get_token
+  File "X/shlex.py", line 188, in read_token
+ValueError: No escaped character
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] dir
+
+
+    Directory: F:\Development\Personal\PluralSight\Angular JS Fundamentals
+
+
+Mode                LastWriteTime     Length Name                                                                      
+----                -------------     ------ ----                                                                      
+d----        2014/03/27  01:36 PM            angular-seed-master                                                       
+-a---        2014/03/27  10:18 AM     103155 angular.min.js                                                            
+-a---        2014/03/27  10:37 AM        367 index.html                                                                
+-a---        2014/04/10  03:45 PM          1 terminal.glue                                                             
+
+
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] F:
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] di
+di : The term 'di' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ di
++ ~~
+    + CategoryInfo          : ObjectNotFound: (di:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] dir
+
+
+    Directory: F:\Development\Personal\PluralSight\Angular JS Fundamentals
+
+
+Mode                LastWriteTime     Length Name                                                                      
+----                -------------     ------ ----                                                                      
+d----        2014/03/27  01:36 PM            angular-seed-master                                                       
+-a---        2014/03/27  10:18 AM     103155 angular.min.js                                                            
+-a---        2014/03/27  10:37 AM        367 index.html                                                                
+-a---        2014/04/10  03:45 PM          1 terminal.glue                                                             
+
+
+
+█ [ F:\Development\Personal\PluralSight\Angular JS Fundamentals ] cls
+█ [ c:\Users ] cd c:\Users
+c:\Users
+
+█ [ c:\Users ] dir
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime     Length Name                                                                      
+----                -------------     ------ ----                                                                      
+d----        2014/02/17  05:16 PM            .NET v2.0                                                                 
+d----        2014/02/17  05:16 PM            .NET v2.0 Classic                                                         
+d----        2014/02/17  05:16 PM            .NET v4.5                                                                 
+d----        2014/02/17  05:16 PM            .NET v4.5 Classic                                                         
+d----        2014/02/17  05:16 PM            Angular                                                                   
+d----        2014/02/17  05:16 PM            Angular-PhoneCat                                                          
+d----        2014/02/17  05:16 PM            AngularJS                                                                 
+d----        2014/02/17  05:16 PM            BongaD                                                                    
+d----        2014/02/17  05:16 PM            Classic .NET AppPool                                                      
+d----        2014/02/17  05:16 PM            DefaultAppPool                                                            
+d----        2014/02/17  05:16 PM            Jasmine                                                                   
+d----        2014/02/17  07:17 AM            MsDtsServer110                                                            
+d----        2014/02/17  07:18 AM            MSSQLFDLauncher                                                           
+d----        2014/02/17  07:17 AM            MSSQLSERVER                                                               
+d----        2014/02/17  07:17 AM            MSSQLServerOLAPService                                                    
+d----        2014/02/17  05:16 PM            Mukti                                                                     
+d----        2014/03/19  12:09 PM            PaulCL                                                                    
+d-r--        2014/02/06  03:18 PM            Public                                                                    
+d----        2014/02/17  07:17 AM            ReportServer                                                              
+d----        2014/02/17  05:16 PM            User                                                                      
+
+
+
+
+
+ 

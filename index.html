@@ -1,0 +1,99 @@
+﻿<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)" itemtype="http://schema.org/Thing/Organization/LocalBusiness/HealthAndBeautyBusiness/HealthClub">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga, Kung Fu and Chi Gung/Qigong classes in Durban South Africa.</title>
+    <meta name="description" content="Yoga and martial arts in Durban, South Africa." itemscope="" itemtype="http://schema.org/Thing/Organization/LocalBusiness/HealthAndBeautyBusiness/HealthClub">
+    <meta name="keywords" content="yoga, yoga poses, hatha yoga, yoga breathing exercises, benefits of yoga, yoga positions, ashtanga, Ashtanga, vinyasa,Chi Gung/Qigong, Chi Gung/Qigong standing meditation, Chi Gung/Qigong standing, chinese Chi Gung/Qigong, qigong, qigong healing, meditation, meditation techniques, meditation exercises, meditation for beginners, chakra meditation, yoga meditation, meditations, kung fu, gong fu, internal kung fu, bagua, ba gua zhang, internal martial art, kung fu self defence, kung fu self defence, taoist kung fu, daoist kung fu, sparring, weapons, sword, spear, sabre, sword fighting">
+    <meta name="copyright" content="Copyright Mukti Movement (c) - 2014" />
+    <link rel="stylesheet" href="./assets/css/foundation.css" />   
+    <link rel="stylesheet" href="app/app.css" />   
+    <link rel="stylesheet" href="./lib/font-awesome-4.2.0/css/font-awesome.min.css"> 
+</head>
+<body ng-app="muktiMovementApp">
+  <nav class="top-bar" data-topbar role="navigation">
+    <section class="top-bar-section">
+      <div class="row">
+        <div class="large-2 columns">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#/home">MUKTI MOVEMENT</a></h1>
+            </li>   
+          </ul>
+        </div>
+        <div class="large-8 columns">
+          <ul class="button-group left">        
+            <li class="name"><h1><a href="#/yoga">Yoga</a></h1></li>
+            <li class="name"><h1><a href="#/bagua">Bagua Zhang Kung Fu</a></h1></li>
+            <li class="name"><h1><a href="#/gallery">Gallery</a></h1></li>
+            <li class="name"><h1><a href="#/classes">Classes</a></h1></li>
+            <li class="name"><h1><a href="#/contact">Contact</a></h1></li>
+          </ul>
+        </div>
+        <div class="large-2 columns">
+          <ul class="right">      
+            <li class="has-dropdown">
+              <i class="fa fa-navicon" style="color:#FFF"></i>&nbsp;
+              <ul class="dropdown">
+                <li><a href="#/home"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a></li>
+                <li><a href="#/contact"><i class="fa fa-envelope fa-fw"></i>&nbsp;Contact Us</a></li>
+                <li><a href="http://baguakungfu.wordpress.com/" target="_blank"><i class="fa fa-wordpress fa-fw"></i>&nbsp;Blog</a></li>
+                <li><a href="https://twitter.com/MuktiMovement" target="_blank"><i class="fa fa-twitter fa-fw"></i>&nbsp;Twitter</a></li>
+              </ul>
+            </li>
+         </ul>
+        </div>
+      </div>
+    </section>
+  </nav>
+  <hr />
+    <!-- End Header and Nav -->
+   
+    <!-- Content -->
+    <div ng-view></div>
+    <!-- Footer -->
+   
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr />
+        <div class="row">
+          <div class="large-6 columns">
+            <p>&copy; Copyright Mukti Movement - 2014</p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="inline-list right">
+               <div class="list-group">
+                <a class="list-group-item" href="#/home"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
+                <a class="list-group-item" href="#/contact"><i class="fa fa-envelope fa-fw"></i>&nbsp; Contact Us</a>
+                <a class="list-group-item" href="http://baguakungfu.wordpress.com/" target="_blank"><i class="fa fa-wordpress fa-fw"></i>&nbsp; Blog</a>
+                <a class="list-group-item" href="https://twitter.com/MuktiMovement" target="_blank"><i class="fa fa-twitter fa-fw"></i>&nbsp; Twitter</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>  
+
+    <script src="./lib/angular/angular-1.2.13.min.js"></script>
+    <script src="./lib/angular/angular-route-1.2.10.min.js"></script>
+    <script src="./lib/angular/angular-touch-1.2.10.min.js"></script>
+    <script src="./lib/angular/angular-animate-1.2.10.min.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/foundation.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/templates/home/home.js"></script>
+    <script src="app/templates/yoga/yoga.js"></script>
+    <script src="app/templates/bagua/bagua.js"></script>
+    <script src="app/templates/gallery/gallery.js"></script>
+    <script src="app/templates/error/error.js"></script>
+    <script src="app/templates/classes/classes.js"></script>
+    <script src="app/templates/contact/contact.js"></script>
+    <script>
+        $(document).foundation();
+
+        var doc = document.documentElement;
+        doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>   
+  </body>
+</html>
