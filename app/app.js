@@ -6,17 +6,10 @@ var muktiMovementApp = angular.module('muktiMovementApp', [
   'muktiMovementApp.home',
   'muktiMovementApp.yoga',
   'muktiMovementApp.bagua',
-  'muktiMovementApp.gallery',
   'muktiMovementApp.classes',
   'muktiMovementApp.contact'
 ]).
 config(['$routeProvider', function ($routeProvider) {
-
-	$routeProvider.when('/gallery',
-	{
-		templateUrl: 'app/templates/gallery/gallery.html',
-		controller: 'galleryCtrl'
-	});
 
 	$routeProvider.when('/error',
 	{
