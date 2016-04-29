@@ -1,64 +1,74 @@
-'use strict';
+(function() {
 
-// Declare app level module which depends on views, and components
-var muktiMovementApp = angular.module('muktiMovementApp', [
-  'ngRoute',  
-  'muktiMovementApp.home',
-  'muktiMovementApp.yoga',
-  'muktiMovementApp.bagua',
-  'muktiMovementApp.classes',
-  'muktiMovementApp.contact'
-]).
-config(['$routeProvider', function ($routeProvider) {
+    'use strict';
 
-	$routeProvider.when('/error',
-	{
-		templateUrl: 'app/templates/error/error.html',
-		controller: 'errorCtrl'
-	});
+    var muktiMovementApp = angular.module('muktiMovementApp', ['ui.router']);
 
-	$routeProvider.when('/yoga',
-	{
-		templateUrl: 'app/templates/yoga/yoga.html',
-		controller: 'yogaCtrl'
-	});
+    muktiMovementApp.constant('VERSION', '0.1');
 
-	$routeProvider.when('/bagua',
-	{
-		templateUrl: 'app/templates/bagua/bagua.html',
-		controller: 'baguaCtrl'
-	});
+    muktiMovementApp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
 
-	$routeProvider.when('/classes',
-	{
-		templateUrl: 'app/templates/classes/classes.html',
-		controller: 'classesCtrl'
-	});
+        $urlRouterProvider.otherwise('/home');
+        $stateProvider
+            .state('home', {
+                url: '/home',
+                templateUrl: 'partials/home/home.html',
+                data: {
+                    pageTitle : 'Bagua Kung Fu Durban - Home',
+                    description: 'Bagua Zhang Kung Fu in Durban South Africa'
+                }
+            })
+            .state('error', {
+                url: '/error',
+                templateUrl: 'partials/error/error.html',
+                data: {
+                    pageTitle : 'Bagua Kung Fu Durban - History',
+                    description: 'This page provides history on the martial art of Bagua Zhang Kung Fu.'
+                }
+            })
+            .state('yoga', {
+                url: '/yoga',
+                templateUrl: 'partials/yoga/yoga.html',
+                data: {
+                    pageTitle : 'Bagua Kung Fu Durban - Theory',
+                    description: 'This page describes the theories contained within the martial art of Bagua Zhang Kung Fu.',
+                }
+            })
+            .state('bagua', {
+                url: '/bagua',
+                templateUrl: 'partials/bagua/bagua.html',
+                data: {
+                    pageTitle : 'Bagua Kung Fu Durban - Method',
+                    description: 'This page provides nformation on the training methods of Durban Bagua Zhang Kung Fu.'
+                }
+            })
+            .state('classes', {
+                url: '/classes',
+                templateUrl: 'partials/classes/classes.html',
+                data: {
+                    pageTitle : 'Bagua Kung Fu Durban - Method',
+                    description: 'This page provides nformation on the training methods of Durban Bagua Zhang Kung Fu.'
+                }
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'partials/contact/contact.html',
+                data: {
+                    pageTitle : 'Bagua Kung Fu Durban - Method',
+                    description: 'This page provides nformation on the training methods of Durban Bagua Zhang Kung Fu.'
+                }
+            });
 
-	$routeProvider.when('/contact',
-	{
-		templateUrl: 'app/templates/contact/contact.html',
-		controller: 'contactCtrl'
-	});
+        // $locationProvider.html5Mode({
+        //   enabled: true,
+        //   requireBase: false
+        // });
+    });
 
-    $routeProvider.otherwise({ redirectTo: '/home' });
-}]);
+    muktiMovementApp.controller('appCtrl', ['$scope', function($scope) {
 
-muktiMovementApp.controller('navController', ['$scope', function($scope) {
-	$scope.changeButtonColour = function() {
-		
-	};	
-}])
+    }]);
 
-muktiMovementApp.directive("click", function () {
-    return function(scope, element, attrs) {
-        element.bind("click", function() {
-            scope.boolChangeClass = !scope.boolChangeClass;
-            console.log(element);
-            scope.$apply();
-        });
-    };
-});
+    
 
-
-
+}());
