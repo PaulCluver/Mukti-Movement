@@ -14,49 +14,53 @@
                 url: '/home',
                 templateUrl: 'partials/home/home.html',
                 data: {
-                    pageTitle: 'Bagua Kung Fu Durban - Home',
-                    description: 'Bagua Zhang Kung Fu in Durban South Africa'
+                    title: '',
+                    description: 'Mukti Movement and Medicine: Yoga, Kung Fu, Muay Thai, Chiropractic, Homeopathy in Durban, South Africa'
                 }
             })
             .state('error', {
                 url: '/error',
-                templateUrl: 'partials/error/error.html',
-                data: {
-                    pageTitle: 'Bagua Kung Fu Durban - History',
-                    description: 'This page provides history on the martial art of Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/error/error.html'
             })
-            .state('yoga', {
-                url: '/yoga',
-                templateUrl: 'partials/yoga/yoga.html',
-                data: {
-                    pageTitle: 'Bagua Kung Fu Durban - Theory',
-                    description: 'This page describes the theories contained within the martial art of Bagua Zhang Kung Fu.',
-                }
+            .state('astangayoga', {
+                url: '/astangayoga',
+                templateUrl: 'partials/yoga/astanga.html'
+            })
+            .state('vinyasayoga', {
+                url: '/vinyasayoga',
+                templateUrl: 'partials/yoga/vinyasa.html'
             })
             .state('bagua', {
                 url: '/bagua',
-                templateUrl: 'partials/bagua/bagua.html',
-                data: {
-                    pageTitle: 'Bagua Kung Fu Durban - Method',
-                    description: 'This page provides information on the training methods of Durban Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/martial/bagua.html'
+            })
+            .state('xingyi', {
+                url: '/xingyi',
+                templateUrl: 'partials/martial/xingyi.html'
+            })
+            .state('taiji', {
+                url: '/taiji',
+                templateUrl: 'partials/martial/taiji.html'
+            })
+            .state('muaythai', {
+                url: '/muaythai',
+                templateUrl: 'partials/martial/muaythai.html'
+            })
+            .state('chiropractic', {
+                url: '/chiropractic',
+                templateUrl: 'partials/medicine/chiropractic.html'
+            })
+            .state('homeopathy', {
+                url: '/homeopathy',
+                templateUrl: 'partials/medicine/homeopathy.html'
             })
             .state('classes', {
                 url: '/classes',
-                templateUrl: 'partials/classes/classes.html',
-                data: {
-                    pageTitle: 'Bagua Kung Fu Durban - Method',
-                    description: 'This page provides information on the training methods of Durban Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/classes/classes.html'
             })
             .state('contact', {
                 url: '/contact',
-                templateUrl: 'partials/contact/contact.html',
-                data: {
-                    pageTitle: 'Bagua Kung Fu Durban - Method',
-                    description: 'This page provides information on the training methods of Durban Bagua Zhang Kung Fu.'
-                }
+                templateUrl: 'partials/contact/contact.html'
             });
     });
 
@@ -83,5 +87,5 @@
 
         $scope.appendToEl = angular.element(document.querySelector('#dropdown-long-content'));
     }]);
-    
+
 }());

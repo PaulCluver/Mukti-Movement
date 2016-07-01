@@ -8064,8 +8064,8 @@ header .container {
 .navbar a.navbar-brand img {
     float: left;
     margin: 0 6px 0 0;
-    width: 152px;
-    height: 110px;
+    width: 196px;
+    height: 124px;
 }
 
 .navbar a.navbar-brand span.logo_title {
@@ -8170,16 +8170,16 @@ header .container {
 }
 
 #social_media_wrapper {
-    background: #D61832;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     display: inline-block;
     position: absolute;
     top: 0px;
-    right: 15px;
+    left: 0px;
     z-index: 101;
     overflow: hidden;
-    padding: 10px;
+    padding: 0px;
+
 }
 
 #social_media_wrapper a {
@@ -8196,6 +8196,7 @@ header .container {
     -webkit-transition: all 100ms linear;
     -o-transition: all 100ms linear;
     transition: all 100ms linear;
+    color:#333;
 }
 
 #social_media_wrapper a i {
