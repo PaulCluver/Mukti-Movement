@@ -1,2 +1,0 @@
-1. Fix page headers & descriptions in app.js
-2. 

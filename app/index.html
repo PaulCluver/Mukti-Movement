@@ -73,9 +73,12 @@
                         </a>
                         <ul class="nav pull-right navbar-nav">
                             <li uib-dropdown>
-                                <a href="#" uib-dropdown-toggle>Movement</a>
+                                <a href="#" uib-dropdown-toggle>Movement<span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
-                                    <li role="menuitem">
+                                    <li role="menuitem" ng-repeat="movement in movements">
+                                      <a ui-sref="{{movement.url}}">{{movement.friendlyName}}</a>
+                                    </li>
+                                    <!-- <li role="menuitem">
                                         <a class="small" ui-sref="bagua" class="text-lowercase">Bagua Zhang Kung Fu</a>
                                     </li>
                                     <li role="menuitem">
@@ -94,37 +97,33 @@
                                     <li role="menuitem">
                                         <a class="small" ui-sref="astangayoga" class="text-lowercase">Astanga Yoga</a>
                                     </li>
+                                    <li role="menuitem">
+                                        <a class="small" ui-sref="astangayoga" class="text-lowercase">Hatha Yoga</a>
+                                    </li> -->
                                 </ul>
                             </li>
                             <li uib-dropdown>
-                                <a href="#" uib-dropdown-toggle>Medicine</a>
+                                <a href="#" uib-dropdown-toggle>Medicine<span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
-                                    <li role="menuitem">
+                                    <li role="menuitem" ng-repeat="med in medicine">
+                                      <a ui-sref="{{med.url}}">{{med.friendlyName}}</a>
+                                    </li>
+                                    <!-- <li role="menuitem">
                                         <a class="small" ui-sref="homeopathy" class="text-lowercase">Homeopathy</a>
                                     </li>
                                     <li role="menuitem">
                                         <a class="small" ui-sref="chiropractic" class="text-lowercase">Chiropractic</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                             <li><a ui-sref="classes">Classes</a></li>
                             <li><a ui-sref="contact">Contact</a></li>
                             <li uib-dropdown>
-                                <a href="#" uib-dropdown-toggle>Sites</a>
+                                <a href="#" uib-dropdown-toggle>Sites <span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
-                                    <li role="menuitem">
-                                        <a class="small" href="http://www.bagua-kungfu-durban.co.za" target="_blank" class="text-lowercase">www.bagua-kungfu-durban.co.za</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" href="http://www.martial-arts-durban.co.za" target="_blank">www.martial-arts-durban.co.za</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" href="http://www.yoga-durban.co.za" target="_blank">www.yoga-durban.co.za</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li role="menuitem">
-                                        <a class="small" href="http://www.yinstylebaguazhang.com" target="_blank">www.yinstylebaguazhang.com</a>
-                                    </li>
+                                    <li role="menuitem" ng-repeat="link in externalLinks">
+                                      <a href="{{link.url}}" target="_blank">{{link.friendlyName}}</a>
+                                    </li>                                   
                                 </ul>
                             </li>
                         </ul>
