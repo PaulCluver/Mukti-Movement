@@ -76,44 +76,16 @@
                                 <a href="#" uib-dropdown-toggle>Movement<span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
                                     <li role="menuitem" ng-repeat="movement in movements">
-                                      <a ui-sref="{{movement.url}}">{{movement.friendlyName}}</a>
+                                      <a ui-sref="{{movement.url}}" style="text-transform: capitalize">{{movement.friendlyName}}</a>
                                     </li>
-                                    <!-- <li role="menuitem">
-                                        <a class="small" ui-sref="bagua" class="text-lowercase">Bagua Zhang Kung Fu</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="xingyi" class="text-lowercase">Xing Yi Chuan Kung Fu</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="taiji" class="text-lowercase">Tai Ji Chuan Kung Fu</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="muaythai" class="text-lowercase">Muay Thai Boran</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="vinyasayoga" class="text-lowercase">Vinyasa Yoga</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="astangayoga" class="text-lowercase">Astanga Yoga</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="astangayoga" class="text-lowercase">Hatha Yoga</a>
-                                    </li> -->
                                 </ul>
                             </li>
                             <li uib-dropdown>
                                 <a href="#" uib-dropdown-toggle>Medicine<span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
                                     <li role="menuitem" ng-repeat="med in medicine">
-                                      <a ui-sref="{{med.url}}">{{med.friendlyName}}</a>
+                                      <a ui-sref="{{med.url}}" style="text-transform: capitalize">{{med.friendlyName}}</a>
                                     </li>
-                                    <!-- <li role="menuitem">
-                                        <a class="small" ui-sref="homeopathy" class="text-lowercase">Homeopathy</a>
-                                    </li>
-                                    <li role="menuitem">
-                                        <a class="small" ui-sref="chiropractic" class="text-lowercase">Chiropractic</a>
-                                    </li> -->
                                 </ul>
                             </li>
                             <li><a ui-sref="classes">Classes</a></li>
@@ -122,7 +94,7 @@
                                 <a href="#" uib-dropdown-toggle>Sites <span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
                                     <li role="menuitem" ng-repeat="link in externalLinks">
-                                      <a href="{{link.url}}" target="_blank">{{link.friendlyName}}</a>
+                                      <a href="{{link.url}}" target="_blank" style="text-transform: lowercase">{{link.friendlyName}}</a>
                                     </li>                                   
                                 </ul>
                             </li>
