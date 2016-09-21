@@ -69,66 +69,50 @@
 
     muktiMovementApp.controller('appCtrl', ['$scope', function($scope) {
 
-        $scope.externalLinks = [
-            {
-                url: 'http://www.bagua-kungfu-durban.co.za',
-                friendlyName: 'www.bagua-kungfu-durban.co.za'
-            },
-            {
-                url: 'http://www.martial-arts-durban.co.za',
-                friendlyName: 'www.martial-arts-durban.co.za'  
-            },
-            {
-                url: 'http://www.yoga-durban.co.za',
-                friendlyName: 'www.yoga-durban.co.za'  
-            },
-            {
-                url: 'http://www.yinstylebaguazhang.com',
-                friendlyName: 'www.yinstylebaguazhang.com'  
-            }
-        ];
+        $scope.externalLinks = [{
+            url: 'http://www.bagua-kungfu-durban.co.za',
+            friendlyName: 'www.bagua-kungfu-durban.co.za'
+        }, {
+            url: 'http://www.martial-arts-durban.co.za',
+            friendlyName: 'www.martial-arts-durban.co.za'
+        }, {
+            url: 'http://www.yoga-durban.co.za',
+            friendlyName: 'www.yoga-durban.co.za'
+        }, {
+            url: 'http://www.yinstylebaguazhang.com',
+            friendlyName: 'www.yinstylebaguazhang.com'
+        }];
 
-        $scope.movements = [
-            {
-                url: 'bagua',
-                friendlyName: 'Bagua Zhang Kung Fu'
-            },
-            {
-                url: 'xingyi',
-                friendlyName: 'Xing Yi Chuan Kung Fu'  
-            },
-            {
-                url: 'taiji',
-                friendlyName: 'Tai Ji Chuan Kung Fu'  
-            },
-            {
-                url: 'muaythai',
-                friendlyName: 'Muay Thai Boran'  
-            },
-            {
-                url: 'astangayoga',
-                friendlyName: 'Astanga Yoga'  
-            },
-            {
-                url: 'vinyasayoga',
-                friendlyName: 'Vinyasa Yoga'  
-            },
-            {
-                url: 'hathayoga',
-                friendlyName: 'Hatha Yoga'  
-            }
-        ];
+        $scope.movements = [{
+            url: 'bagua',
+            friendlyName: 'Bagua Zhang Kung Fu'
+        }, {
+            url: 'xingyi',
+            friendlyName: 'Xing Yi Chuan Kung Fu'
+        }, /*{
+            url: 'taiji',
+            friendlyName: 'Tai Ji Chuan Kung Fu'
+        },*/ {
+            url: 'muaythai',
+            friendlyName: 'Muay Thai Boran'
+        }, {
+            url: 'astangayoga',
+            friendlyName: 'Astanga Yoga'
+        }, {
+            url: 'vinyasayoga',
+            friendlyName: 'Vinyasa Yoga'
+        }/*, {
+            url: 'hathayoga',
+            friendlyName: 'Hatha Yoga'
+        }*/];
 
-        $scope.medicine = [
-            {
-                url: 'homeopathy',
-                friendlyName: 'Homeopathy'
-            },
-            {
-                url: 'chiropractic',
-                friendlyName: 'Chiropractic'  
-            }
-        ];
+        $scope.medicine = [{
+            url: 'homeopathy',
+            friendlyName: 'Homeopathy'
+        }, {
+            url: 'chiropractic',
+            friendlyName: 'Chiropractic'
+        }];
 
 
         $scope.status = {
@@ -362,10 +346,10 @@
 
     muktiMovementApp.controller('xingYiCtrl', ['$scope', 'XingYiService', function($scope, XingYiService) {
         $scope.techniques = XingYiService.getAllTechniques();
-    }]);    
+    }]);
 
     muktiMovementApp.service('BaGuaDataService', function() {
-        
+
         this.animals = [{
             animal: 'Lion',
             element: 'Metal',
@@ -427,5 +411,12 @@
     muktiMovementApp.controller('baguaCtrl', ['$scope', 'BaguaService', function($scope, BaguaService) {
         $scope.animals = BaguaService.getAllAnimals();
     }]);
+
+    // angular.module('st4rtApp', [
+    //     'sendgrid_module'
+    // ]).controller('AppCtlr', ['Sendgrid', function(Sendgrid) {
+    //     var self = this;
+    //     this.Sendgrid = Sendgrid;
+    // }]);
 
 }());
