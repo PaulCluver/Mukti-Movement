@@ -80,11 +80,13 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li uib-dropdown>
-                                <a href="#" uib-dropdown-toggle>Medicine<span class="caret"></span></a>
+                           <li><a ui-sref="medicine">Medicine</a></li>
+                             <li uib-dropdown>
+                                <a href="#" uib-dropdown-toggle>Teachers<span class="caret"></span></a>
                                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
-                                    <li role="menuitem" ng-repeat="med in medicine">
-                                      <a ui-sref="{{med.url}}" style="text-transform: capitalize">{{med.friendlyName}}</a>
+                                    <li role="menuitem">
+                                      <a ui-sref="nicky" style="text-transform: capitalize">Nicky van der Hulst</a>
+                                      <a ui-sref="paul" style="text-transform: capitalize">Paul Cluver</a>
                                     </li>
                                 </ul>
                             </li>

@@ -49,14 +49,10 @@
                 templateUrl: 'partials/movement/martial/muaythai.html',
                 controller: 'muayThaiCtrl'
             })
-            .state('chiropractic', {
-                url: '/chiropractic',
-                templateUrl: 'partials/medicine/chiropractic.html'
-            })
-            .state('homeopathy', {
-                url: '/homeopathy',
-                templateUrl: 'partials/medicine/homeopathy.html'
-            })
+            .state('medicine', {
+                url: '/medicine',
+                templateUrl: 'partials/medicine/medicine.html'
+            })            
             .state('classes', {
                 url: '/classes',
                 templateUrl: 'partials/classes/classes.html'
@@ -64,6 +60,14 @@
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'partials/contact/contact.html'
+            })
+            .state('nicky', {
+                url: '/nicky',
+                templateUrl: 'partials/bio/nicky.html'
+            })
+            .state('paul', {
+                url: '/paul',
+                templateUrl: 'partials/bio/paul.html'
             });
     });
 
