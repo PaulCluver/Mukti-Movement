@@ -90,16 +90,17 @@
         $scope.movements = [{
             url: 'bagua',
             friendlyName: 'Bagua Zhang Kung Fu'
-        }, {
+        }, /*{
             url: 'xingyi',
             friendlyName: 'Xing Yi Chuan Kung Fu'
-        }, /*{
+        }, {
             url: 'taiji',
             friendlyName: 'Tai Ji Chuan Kung Fu'
-        },*/ {
+        }, {
             url: 'muaythai',
             friendlyName: 'Muay Thai Boran'
-        }, {
+        }, */
+        {
             url: 'astangayoga',
             friendlyName: 'Astanga Yoga'
         }, {
